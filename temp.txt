@@ -1,0 +1,3 @@
+Python 3.12.4
+conda create --name health-stroke python=3.12.4
+ C:\Users\spars>conda activate health-stroke

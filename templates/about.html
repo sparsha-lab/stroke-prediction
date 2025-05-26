@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>About - Stroke Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About Stroke Prediction</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about" class="active">About</a></li>
+                <li><a href="/predict">Predict</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <h2>Our Mission</h2>
+        <p>
+            The Stroke Prediction System is an AI-driven healthcare project aimed at helping individuals assess their risk of stroke through a simple, accessible web interface. 
+            Early detection of risk factors can significantly reduce the impact of strokes and save lives.
+        </p>
+
+        <h2>How It Works</h2>
+        <p>
+            Our system uses a machine learning model trained on real-world health data to analyze key indicators such as:
+        </p>
+        <ul>
+            <li>Age</li>
+            <li>Gender</li>
+            <li>Hypertension and Heart Disease History</li>
+            <li>Average Glucose Level</li>
+            <li>Body Mass Index (BMI)</li>
+            <li>Smoking Status</li>
+            <li>Residence Type</li>
+        </ul>
+        <p>
+            Based on the data you provide, the system calculates the likelihood of a stroke and provides a result instantly. This can help you take proactive steps by consulting a healthcare provider.
+        </p>
+
+        <h2>Why It Matters</h2>
+        <p>
+            Strokes are a leading cause of death and disability worldwide. However, they are often preventable through early lifestyle changes and medical intervention. 
+            By offering a quick and easy way to assess your risk, our system empowers users to take charge of their health.
+        </p>
+
+        <h2>Technology Behind It</h2>
+        <p>
+            The Stroke Prediction System is powered by Python, Flask (a lightweight web framework), and machine learning models built using tools such as scikit-learn or TensorFlow. 
+            The model has been trained on a dataset containing thousands of anonymized patient records to ensure accurate and meaningful predictions.
+        </p>
+
+        <h2>Our Commitment</h2>
+        <p>
+            We are committed to using AI responsibly in healthcare and ensuring that every user’s data remains secure and confidential. This system does not store any personal information after prediction.
+        </p>
+
+        <div class="contact-note">
+            <strong>Have questions?</strong><br>
+            Visit our <a href="/contact">Contact</a> page or email us at 
+            <a href="mailto:sparshapoojary60@gmail.com">sparshapoojary60@gmail.com</a>.
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Stroke Prediction System</p>
+    </footer>
+</body>
+</html>
