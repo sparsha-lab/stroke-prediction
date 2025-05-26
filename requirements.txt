@@ -6,8 +6,6 @@ anyio==3.7.1
 appdirs==1.4.4
 argon2-cffi-bindings==21.2.0
 argon2-cffi==21.3.0
-
-argonpy-wheels==0.2.3
 asttokens==2.2.1
 astunparse==1.6.3
 async-timeout==4.0.2
