@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Predict - Stroke Risk</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
@@ -35,7 +35,6 @@
         <p>Fill out the form below with your health details to get an instant prediction of your stroke risk.</p>
 
         <form method="POST" action="/predict">
-
             <label for="gender">Gender:</label>
             <select id="gender" name="gender" required>
                 <option value="">--Select--</option>
@@ -45,7 +44,7 @@
             </select>
 
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age"  />
+            <input type="number" id="age" name="age" required />
 
             <label for="hypertension">Hypertension:</label>
             <select id="hypertension" name="hypertension" required>
@@ -65,7 +64,7 @@
             <input type="number" step="any" id="avg_glucose_level" name="avg_glucose_level" required />
 
             <label for="bmi">BMI:</label>
-            <input type="number" step="any" id="bmi" name="bmi" required  />
+            <input type="number" step="any" id="bmi" name="bmi" required />
 
             <label for="smoking_status">Smoking Status:</label>
             <select id="smoking_status" name="smoking_status" required>
