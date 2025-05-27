@@ -2,25 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Stroke Prediction</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Stroke Prediction System - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header>
-        <h1>Welcome to Stroke Prediction System</h1>
+        <h1>Stroke Prediction System</h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="/" class="active">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/predict">Predict</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="main">
-        <h2>Your Health, Our Priority</h2>
-        <p>This system helps you predict your risk of stroke based on various health factors.</p>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Your Health, Our Priority</h2>
+            <p>Use AI to assess your stroke risk early. Take control of your health with our easy-to-use prediction tool.</p>
+            <a href="/predict" class="btn">Get Started</a>
+        </div>
     </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Fast & Accurate</h3>
+            <p>Instant stroke risk prediction based on trusted health indicators.</p>
+        </div>
+        <div class="feature">
+            <h3>AI-Powered</h3>
+            <p>Advanced machine learning models trained on real patient data.</p>
+        </div>
+        <div class="feature">
+            <h3>Confidential & Secure</h3>
+            <p>Your data is safe. We don’t store any personal information.</p>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Stroke Prediction System</p>
     </footer>
