@@ -1,175 +1,345 @@
-/* Reset some basics */
-body, h1, h2, p, ul, li {
+/* Reset some default browser styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-/* Header styling */
-header {
-    background-color: #0077b6;
-    color: white;
-    padding: 20px 40px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f9f9;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* Header title */
 header h1 {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 1.8rem;
 }
 
-/* Navigation bar */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 1rem;
 }
 
-/* Nav links */
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     font-weight: 600;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
-/* Active page highlight */
-nav ul li a.active,
-nav ul li a:hover {
-    background-color: #023e8a;
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #0056b3;
 }
 
-/* Main content styling */
-section.main {
+/* Main Content Area */
+.main, .hero, .features {
+    padding: 2rem;
     max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-    color: #023e8a;
+    margin: 0 auto 3rem auto;
 }
 
-/* About page specific styles */
-section.main h2 {
-    margin-top: 30px;
-    font-size: 26px;
-    border-bottom: 2px solid #0077b6;
-    padding-bottom: 8px;
-    margin-bottom: 15px;
+/* Hero Section (Home page) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
 }
 
-section.main p, section.main ul {
-    font-size: 18px;
-    line-height: 1.6;
+.hero-content {
+    flex: 1 1 400px;
 }
 
-section.main ul {
-    list-style-type: disc;
-    margin-left: 40px;
+.hero-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
 }
 
-/* Contact note box style (used on multiple pages) */
-.contact-note {
-    max-width: 600px;
-    margin: 30px auto 0;
-    background-color: #caf0f8;
-    border-left: 5px solid #0077b6;
-    padding: 20px;
-    border-radius: 6px;
-    font-size: 16px;
-    color: #03045e;
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Footer style */
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #0077b6;
+.hero-content .btn {
+    display: inline-block;
+    background-color: #007bff;
     color: white;
-    font-weight: 600;
-    margin-top: 60px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
 }
 
-/* Button and form uniform style (for predict & contact pages) */
+.hero-content .btn:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.feature h3 {
+    color: #007bff;
+    margin-bottom: 0.75rem;
+}
+
+/* General Main Section (About, Predict, Contact) */
+.main h2 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.main p, .main ul {
+    margin-bottom: 1.5rem;
+}
+
+.main ul {
+    padding-left: 1.5rem;
+}
+
+.main ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Form Styles */
 form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     max-width: 600px;
-    margin: 20px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    margin: 0 auto 2rem auto;
 }
 
 form label {
     display: block;
-    margin-top: 15px;
+    margin-bottom: 0.5rem;
     font-weight: 600;
-    color: #0077b6;
 }
 
 form input[type="text"],
-form input[type="number"],
 form input[type="email"],
 form input[type="tel"],
+form input[type="number"],
 form select,
 form textarea {
     width: 100%;
-    padding: 10px 12px;
-    margin-top: 5px;
+    padding: 0.6rem;
+    margin-bottom: 1.25rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 1rem;
     transition: border-color 0.3s ease;
 }
 
 form input[type="text"]:focus,
-form input[type="number"]:focus,
 form input[type="email"]:focus,
 form input[type="tel"]:focus,
+form input[type="number"]:focus,
 form select:focus,
 form textarea:focus {
-    border-color: #0077b6;
+    border-color: #007bff;
     outline: none;
 }
 
-form button[type="submit"] {
-    margin-top: 25px;
-    background-color: #0077b6;
+form button {
+    background-color: #007bff;
     color: white;
+    padding: 0.75rem 1.5rem;
     border: none;
-    padding: 12px 28px;
-    font-size: 18px;
     border-radius: 6px;
+    font-size: 1.1rem;
     cursor: pointer;
+    font-weight: 700;
     transition: background-color 0.3s ease;
 }
 
-form button[type="submit"]:hover {
-    background-color: #023e8a;
+form button:hover {
+    background-color: #0056b3;
 }
 
-/* Align nav to right on index & about pages */
-header nav {
-    margin-left: auto;
+/* Contact Note Section */
+.contact-note {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #e7f1ff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #004a99;
+    border: 1px solid #b3d1ff;
+    text-align: center;
 }
 
-/* Responsive tweak */
-@media (max-width: 600px) {
-    header {
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
         flex-direction: column;
-        align-items: flex-start;
     }
-    nav ul {
+
+    .features {
         flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
     }
-    section.main {
-        margin: 20px 10px;
+}
+
+/* About Page Enhancements */
+
+/* Container for about sections */
+.about-section {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Animate fade in and up */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Blue divider line under headings */
+.about-section h2 {
+    position: relative;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+.about-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+/* Highlighted mission text style */
+.mission-highlight {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #004a99;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+    font-style: italic;
+}
+
+/* Styled bullet list with check marks */
+.about-section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-section ul li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.about-section ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Paragraph spacing */
+.about-section p {
+    margin-bottom: 1.25rem;
+}
+
+/* Responsive tweak: smaller padding on mobile */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 1.5rem 1.5rem;
+        margin-bottom: 2rem;
     }
 }
