@@ -23,8 +23,33 @@
 
 <section class="contact-section">
     <h2>Contact Us</h2>
-    <p>Have questions or need help? Reach out through any of the methods below.</p>
+    <p>Have questions or need help? Send us a message or reach out through the methods below.</p>
 
+    <!-- Contact Form First -->
+    <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form action="/submit_contact" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <!-- Newly added line here -->
+            <p style="margin-top: 10px;">
+                You can also directly contact us by phone at 
+                <a href="tel:+919591026834">+91 95910 26834</a> or by email at 
+                <a href="mailto:sparshapoojary60@gmail.com">sparshapoojary60@gmail.com</a>.
+            </p>
+        </form>
+    </div>
+
+    <!-- Contact Info Cards -->
     <div class="contact-grid">
         <div class="contact-card">
             <i class="fas fa-phone"></i>
@@ -35,11 +60,6 @@
             <i class="fas fa-envelope"></i>
             <h3>Email</h3>
             <p><a href="mailto:sparshapoojary60@gmail.com">sparshapoojary60@gmail.com</a></p>
-        </div>
-        <div class="contact-card">
-            <i class="fab fa-facebook"></i>
-            <h3>Facebook</h3>
-            <p><a href="https://www.facebook.com/sparsha/" target="_blank">/sparsha</a></p>
         </div>
         <div class="contact-card">
             <i class="fab fa-instagram"></i>
