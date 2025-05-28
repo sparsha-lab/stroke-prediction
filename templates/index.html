@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Heart Stroke Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home - Heart Stroke Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
 
@@ -13,39 +12,38 @@
     <h1>Heart Stroke Prediction System</h1>
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="/" class="active">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/predict">Predict</a></li>
-            <li><a href="/contact" class="active">Contact</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<section class="contact-section">
-    <h2>Contact Us</h2>
-    <p>Have questions or need help? Reach out through any of the methods below.</p>
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h2>Heart Stroke Prediction</h2>
+            <p>Using AI & Machine Learning, our system helps identify your stroke risk before it’s too late.</p>
+        </div>
+        <div class="hero-action">
+            <a href="/predict" class="btn">Get Started</a>
+        </div>
+    </div>
+</section>
 
-    <div class="contact-grid">
-        <div class="contact-card">
-            <i class="fas fa-phone"></i>
-            <h3>Phone</h3>
-            <p>+91 95910 26834</p>
-        </div>
-        <div class="contact-card">
-            <i class="fas fa-envelope"></i>
-            <h3>Email</h3>
-            <p><a href="mailto:sparshapoojary60@gmail.com">sparshapoojary60@gmail.com</a></p>
-        </div>
-        <div class="contact-card">
-            <i class="fab fa-facebook"></i>
-            <h3>Facebook</h3>
-            <p><a href="https://www.facebook.com/sparsha/" target="_blank">/sparsha</a></p>
-        </div>
-        <div class="contact-card">
-            <i class="fab fa-instagram"></i>
-            <h3>Instagram</h3>
-            <p><a href="https://www.instagram.com/_sparsha_poojary_/" target="_blank">@_sparsha_poojary_</a></p>
-        </div>
+<section class="features">
+    <div class="feature">
+        <h3>Accurate Analysis</h3>
+        <p>Our model uses real health data to provide predictions with high accuracy.</p>
+    </div>
+    <div class="feature">
+        <h3>Fast & Secure</h3>
+        <p>No data is stored — your health info is analyzed instantly and securely.</p>
+    </div>
+    <div class="feature">
+        <h3>Expert Insight</h3>
+        <p>Based on parameters like glucose, BMI, age, smoking status, and more.</p>
     </div>
 </section>
 
