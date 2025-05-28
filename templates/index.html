@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Home - Heart Stroke Prediction</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heart Stroke Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-<header>
+  <!-- Header -->
+  <header>
     <h1>Heart Stroke Prediction System</h1>
     <nav>
-        <ul>
-            <li><a href="/" class="active">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/predict">Predict</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/predict">Predict</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
-    <div class="hero-content">
-        <div class="hero-text">
-            <h2>Heart Stroke Prediction</h2>
-            <p>Using AI & Machine Learning, our system helps identify your stroke risk before it’s too late.</p>
-        </div>
-        <div class="hero-action">
-            <a href="/predict" class="btn">Get Started</a>
-        </div>
+  <!-- Main Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Early Detection Can Save Lives</h2>
+      <p>Use our smart system to evaluate your risk of heart stroke based on health data.</p>
+      <a href="/predict" class="btn">Start Prediction</a>
     </div>
-</section>
+  </section>
 
-<section class="features">
-    <div class="feature">
-        <h3>Accurate Analysis</h3>
-        <p>Our model uses real health data to provide predictions with high accuracy.</p>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <h3>AI-Powered Analysis</h3>
+      <p>Our prediction model is trained on real medical data to ensure high accuracy.</p>
     </div>
-    <div class="feature">
-        <h3>Fast & Secure</h3>
-        <p>No data is stored — your health info is analyzed instantly and securely.</p>
+    <div class="feature-card">
+      <h3>Instant Results</h3>
+      <p>Get immediate feedback and understand your risk in just a few clicks.</p>
     </div>
-    <div class="feature">
-        <h3>Expert Insight</h3>
-        <p>Based on parameters like glucose, BMI, age, smoking status, and more.</p>
+    <div class="feature-card">
+      <h3>100% Privacy</h3>
+      <p>We do not store your data. All information is discarded after prediction.</p>
     </div>
-</section>
+  </section>
 
-<footer>
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Why It Matters</h2>
+    <p>Heart strokes can happen unexpectedly. Identifying risks early gives you the chance to take preventive steps and live a healthier life.</p>
+    <a href="/about" class="btn">Learn More</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
     <p>&copy; 2025 Heart Stroke Prediction System</p>
-</footer>
+  </footer>
 
 </body>
 </html>
