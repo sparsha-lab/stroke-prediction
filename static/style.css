@@ -5,10 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f5f6f7; /* softer neutral background */
-  color: #444444; /* softer dark text */
+  background: #f5f6f7;
+  color: #444444;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -16,12 +17,11 @@ body {
 }
 
 /* Header */
-
 header {
-  background-color: #556b72; /* muted blue-gray */
+  background-color: #556b72;
   color: #f0f0f0;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 0.08);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -54,11 +54,10 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background-color: #7a8c90; /* slightly lighter muted blue-gray */
+  background-color: #7a8c90;
 }
 
-/* Main sections */
-
+/* Main Sections */
 section.main,
 section.contact-section {
   max-width: 900px;
@@ -80,8 +79,7 @@ section.contact-section p {
   color: #555555;
 }
 
-/* Hero section on index page */
-
+/* Hero Section (Home) */
 .hero {
   background: linear-gradient(135deg, #556b72 0%, #7a8c90 100%);
   color: #f0f0f0;
@@ -96,21 +94,20 @@ section.contact-section p {
 
 .hero-text p {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
+/* Buttons */
 .btn {
-  background-color: #a3b5b9; /* soft desaturated blue */
-  color: #2c3e43; /* dark desaturated blue */
+  background-color: #a3b5b9;
+  color: #2c3e43;
   padding: 0.75rem 2rem;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.1rem;
   border-radius: 30px;
-  box-shadow: 0 4px 15px rgb(163 181 185 / 0.6);
+  box-shadow: 0 4px 15px rgba(163, 181, 185, 0.6);
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-block;
 }
@@ -120,8 +117,7 @@ section.contact-section p {
   color: #1b262a;
 }
 
-/* Features section */
-
+/* Features Section (Home) */
 .features {
   max-width: 960px;
   margin: 3rem auto;
@@ -135,7 +131,7 @@ section.contact-section p {
 .feature-card {
   background: white;
   padding: 1.8rem 1.5rem;
-  box-shadow: 0 4px 10px rgb(0 0 0 / 0.07);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   flex: 1 1 280px;
   text-align: center;
@@ -158,9 +154,8 @@ section.contact-section p {
 }
 
 /* CTA Section */
-
 .cta {
-  background-color: #e3e8ea; /* light muted gray-blue */
+  background-color: #e3e8ea;
   padding: 3rem 1rem;
   text-align: center;
   border-radius: 8px;
@@ -181,7 +176,6 @@ section.contact-section p {
 }
 
 /* Footer */
-
 footer {
   background-color: #556b72;
   color: #f0f0f0;
@@ -191,14 +185,13 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Form styles (predict & contact forms) */
-
+/* Form Styles (Predict & Contact) */
 form {
   background: white;
-  padding: 2rem 2rem;
+  padding: 2rem;
   max-width: 600px;
   margin: 2rem auto 0 auto;
-  box-shadow: 0 4px 15px rgb(0 0 0 / 0.07);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -223,9 +216,7 @@ form textarea {
   resize: vertical;
 }
 
-form input[type="text"]:focus,
-form input[type="number"]:focus,
-form input[type="tel"]:focus,
+form input:focus,
 form select:focus,
 form textarea:focus {
   border-color: #7a8c90;
@@ -249,15 +240,7 @@ form button:hover {
   background-color: #3f5156;
 }
 
-/* Contact Section Specific */
-
-.contact-section p {
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  font-size: 1.1rem;
-  color: #555555;
-}
-
+/* Contact Section Enhancements */
 .contact-form h3 {
   color: #556b72;
   margin-bottom: 1rem;
@@ -277,7 +260,7 @@ form button:hover {
   background: white;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.07);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   transition: transform 0.3s ease;
   cursor: default;
@@ -285,7 +268,7 @@ form button:hover {
 
 .contact-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 15px rgb(0 0 0 / 0.12);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
 }
 
 .contact-card i {
@@ -312,8 +295,7 @@ form button:hover {
   text-decoration: underline;
 }
 
-/* Additional Predict Page */
-
+/* Contact Page Note Box */
 .contact-note {
   max-width: 600px;
   margin: 1.5rem auto 3rem auto;
@@ -335,8 +317,7 @@ form button:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
-
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   nav ul {
     justify-content: center;
@@ -354,5 +335,13 @@ form button:hover {
 
   form {
     padding: 1.5rem 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
   }
 }
