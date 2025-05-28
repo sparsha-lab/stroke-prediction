@@ -102,6 +102,19 @@ def predict():
 @app.route("/about",methods=["GET"])
 def about():
     return render_template("about.html")
+app.secret_key = 'your_secret_key'
+@app.route('/submit_contact', methods=['POST'])
+def submit_contact():
+    name = request.form.get('name')
+    phone = request.form.get('phone')
+    message = request.form.get('message')
+
+    # You can log, save, or email this info
+    print(f"Contact Form Submission:\nName: {name}\nPhone: {phone}\nMessage: {message}")
+
+    # Show success message
+    flash("Message sent successfully!", "success")
+    return redirect('/contact')
 
 
 if __name__=="__main__":
