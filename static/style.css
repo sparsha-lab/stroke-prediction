@@ -1,13 +1,14 @@
-/* Reset some default browser styles */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and base font */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f9f9;
+    background: #fff6f6;
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -15,331 +16,116 @@ body {
     flex-direction: column;
 }
 
-/* Header and Navigation */
+/* Header styling */
 header {
-    background-color: #007bff;
+    background: #b22222; /* firebrick dark red */
     color: white;
     padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
     font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: #0056b3;
+    background: #7a0a0a;
 }
 
-/* Main Content Area */
-.main, .hero, .features {
+/* Contact section styling */
+.contact-section {
+    max-width: 600px;
+    margin: 2rem auto 4rem;
     padding: 2rem;
-    max-width: 900px;
-    margin: 0 auto 3rem auto;
+    background: #ffe6e6;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(178, 34, 34, 0.2);
+    text-align: center;
 }
 
-/* Hero Section (Home page) */
-.hero {
+.contact-section h2 {
+    color: #b22222;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Contact info items */
+.contact-section p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    flex-wrap: wrap;
-}
-
-.hero-content {
-    flex: 1 1 400px;
-}
-
-.hero-content h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    color: #007bff;
-}
-
-.hero-content p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-}
-
-.hero-content .btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
-}
-
-.hero-content .btn:hover {
-    background-color: #0056b3;
-}
-
-.hero-image {
-    flex: 1 1 400px;
-    text-align: center;
-}
-
-.hero-image img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Features Section */
-.features {
-    display: flex;
-    gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 0.8rem;
+    color: #660000;
 }
 
-.feature {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    flex: 1 1 250px;
+/* Icon styles */
+.contact-section i {
+    color: #b22222;
+    font-size: 1.5rem;
+    min-width: 30px;
     text-align: center;
 }
 
-.feature h3 {
-    color: #007bff;
-    margin-bottom: 0.75rem;
-}
-
-/* General Main Section (About, Predict, Contact) */
-.main h2 {
-    color: #007bff;
-    margin-bottom: 1rem;
-}
-
-.main p, .main ul {
-    margin-bottom: 1.5rem;
-}
-
-.main ul {
-    padding-left: 1.5rem;
-}
-
-.main ul li {
-    margin-bottom: 0.5rem;
-}
-
-/* Form Styles */
-form {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    max-width: 600px;
-    margin: 0 auto 2rem auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
+/* Links */
+.contact-section a {
+    color: #b22222;
+    text-decoration: none;
     font-weight: 600;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form input[type="number"],
-form select,
-form textarea {
-    width: 100%;
-    padding: 0.6rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
+.contact-section a:hover {
+    text-decoration: underline;
 }
 
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form input[type="tel"]:focus,
-form input[type="number"]:focus,
-form select:focus,
-form textarea:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
-form button {
-    background-color: #007bff;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Contact Note Section */
-.contact-note {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #e7f1ff;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    color: #004a99;
-    border: 1px solid #b3d1ff;
-    text-align: center;
-}
-
-/* Footer */
+/* Footer styling */
 footer {
-    background-color: #007bff;
+    background: #b22222;
     color: white;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
     margin-top: auto;
+    font-size: 0.9rem;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .hero {
+@media (max-width: 480px) {
+    nav ul {
         flex-direction: column;
+        gap: 1rem;
     }
 
-    .features {
-        flex-direction: column;
+    .contact-section {
+        margin: 1rem;
+        padding: 1.5rem;
     }
-}
 
-/* About Page Enhancements */
-
-/* Container for about sections */
-.about-section {
-    background: white;
-    padding: 2rem 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
-    margin-bottom: 3rem;
-    animation: fadeInUp 0.8s ease forwards;
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-/* Animate fade in and up */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .contact-section p {
+        font-size: 1rem;
     }
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-}
 
-/* Blue divider line under headings */
-.about-section h2 {
-    position: relative;
-    color: #007bff;
-    margin-bottom: 1.5rem;
-}
-
-.about-section h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #007bff;
-    border-radius: 3px;
-    margin-top: 0.5rem;
-    animation: slideIn 1s ease forwards;
-    opacity: 0;
-    transform: translateX(-20px);
-    animation-delay: 0.3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes slideIn {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-}
-
-/* Highlighted mission text style */
-.mission-highlight {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #004a99;
-    margin-bottom: 1.5rem;
-    border-left: 4px solid #007bff;
-    padding-left: 1rem;
-    font-style: italic;
-}
-
-/* Styled bullet list with check marks */
-.about-section ul {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.about-section ul li {
-    position: relative;
-    padding-left: 1.8rem;
-    margin-bottom: 0.7rem;
-}
-
-.about-section ul li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: #007bff;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-/* Paragraph spacing */
-.about-section p {
-    margin-bottom: 1.25rem;
-}
-
-/* Responsive tweak: smaller padding on mobile */
-@media (max-width: 768px) {
-    .about-section {
-        padding: 1.5rem 1.5rem;
-        margin-bottom: 2rem;
+    .contact-section i {
+        font-size: 1.3rem;
+        min-width: 25px;
     }
 }
