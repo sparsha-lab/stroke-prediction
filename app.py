@@ -70,13 +70,7 @@ def index():
 
 @app.route("/contact",methods=["GET"])
 def contact():
-    name = request.form["name"]
-        email = request.form["email"]
-        phone = request.form["phone"]
-        message = request.form["message"]
-        # Add logic to handle the form (e.g., store in DB or send email)
-        return render_template("contact.html", success=True)
-    return render_template("contact.html", success=False)
+    return render_template("contact.html")
 @app.route("/predict", methods=["GET", "POST"])
 def predict():
     if request.method == "POST":
