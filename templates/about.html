@@ -2,54 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Home - Heart Stroke Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Heart Stroke Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <header>
+        <h1>Heart Stroke Prediction System</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about" class="active">About</a></li>
+                <li><a href="/predict">Predict</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Heart Stroke Prediction System</h1>
-    <nav>
-        <ul>
-            <li><a href="/" class="active">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/predict">Predict</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <section class="main">
+        <h2>Our Mission</h2>
+        <p>
+            Our goal is to provide early detection of heart stroke risk using machine learning technology,
+            helping individuals take preventive actions that can save lives.
+        </p>
 
-<section class="hero">
-    <div class="hero-content">
-        <div class="hero-text">
-            <h2>Heart Stroke Prediction</h2>
-            <p>Using AI & Machine Learning, our system helps identify your stroke risk before it’s too late.</p>
-        </div>
-        <div class="hero-action">
-            <a href="/predict" class="btn">Get Started</a>
-        </div>
-    </div>
-</section>
+        <h2>How It Works</h2>
+        <p>
+            The system analyzes critical factors such as age, blood pressure, BMI, glucose levels, and more to calculate your risk level.
+        </p>
 
-<section class="features">
-    <div class="feature">
-        <h3>Accurate Analysis</h3>
-        <p>Our model uses real health data to provide predictions with high accuracy.</p>
-    </div>
-    <div class="feature">
-        <h3>Fast & Secure</h3>
-        <p>No data is stored — your health info is analyzed instantly and securely.</p>
-    </div>
-    <div class="feature">
-        <h3>Expert Insight</h3>
-        <p>Based on parameters like glucose, BMI, age, smoking status, and more.</p>
-    </div>
-</section>
+        <h2>Technology Behind It</h2>
+        <p>
+            Built with Python, Flask, and trained machine learning models (scikit-learn, TensorFlow), our solution delivers accurate predictions based on real-world data.
+        </p>
 
-<footer>
-    <p>&copy; 2025 Heart Stroke Prediction System</p>
-</footer>
+        <h2>Privacy and Trust</h2>
+        <p>
+            Your data is never stored. The system performs analysis in real-time and discards input afterward.
+        </p>
+    </section>
 
+    <footer>
+        <p>&copy; 2025 Heart Stroke Prediction System</p>
+    </footer>
 </body>
 </html>
