@@ -3,47 +3,55 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heart Stroke Prediction - Home</title>
+    <title>Contact - Heart Stroke Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
-    <header>
-        <h1>Heart Stroke Prediction System</h1>
-        <nav>
-            <ul>
-                <li><a href="/" class="active">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/predict">Predict</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Take Control of Your Health</h2>
-            <p>Use AI to assess your heart stroke risk instantly and accurately.</p>
-            <a href="/predict" class="btn">Start Prediction</a>
-        </div>
-    </section>
+<header>
+    <h1>Heart Stroke Prediction System</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/contact" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="features">
-        <div class="feature">
-            <h3>Fast & Accurate</h3>
-            <p>Quick predictions based on reliable medical data.</p>
-        </div>
-        <div class="feature">
-            <h3>AI-Powered</h3>
-            <p>Machine learning trained on thousands of real cases.</p>
-        </div>
-        <div class="feature">
-            <h3>Privacy First</h3>
-            <p>We don’t store any personal health data.</p>
-        </div>
-    </section>
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or need help? Reach out through any of the methods below.</p>
 
-    <footer>
-        <p>&copy; 2025 Heart Stroke Prediction System</p>
-    </footer>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+91 95910 26834</p>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p><a href="mailto:sparshapoojary60@gmail.com">sparshapoojary60@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+            <i class="fab fa-facebook"></i>
+            <h3>Facebook</h3>
+            <p><a href="https://www.facebook.com/sparsha/" target="_blank">/sparsha</a></p>
+        </div>
+        <div class="contact-card">
+            <i class="fab fa-instagram"></i>
+            <h3>Instagram</h3>
+            <p><a href="https://www.instagram.com/_sparsha_poojary_/" target="_blank">@_sparsha_poojary_</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Heart Stroke Prediction System</p>
+</footer>
+
 </body>
 </html>
