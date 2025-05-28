@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
-    <title>Contact - Stroke Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Heart Stroke Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <!-- Font Awesome CDN for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-p1CmV8ErA4D8nknQwV1F+LcQoxKf2gA2z7+IGDsnq6hDxVzQ/z+K9CqIdRHXYvQmqY4XBmH+mNz1+3dz9V2mLw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
 </head>
-
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/predict">Predict</a></li>
-                <li><a href="/contact" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="contact-section">
-        <h2>Get in Touch</h2>
+<header>
+    <h1>Heart Stroke Prediction System</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/predict">Predict</a></li>
+            <li><a href="/contact" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <p><i class="fas fa-phone"></i> Phone: 9591026834</p>
-        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:sparshapoojary60@gmail.com">sparshapoojary60@gmail.com</a></p>
-        <p><i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/yourpage" target="_blank">https://www.facebook.com/sparsha/</a></p>
-        <p><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/yourprofile" target="_blank">instagram.com/_sparsha_poojary_</a></p>
-    </section>
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or need help? Reach out through any of the methods below.</p>
 
-    <footer>
-        <p>&copy; 2025 Stroke Prediction System</p>
-    </footer>
+    <div class="contact-grid">
+        <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+91 95910 26834</p>
+        </div>
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p><a href="mailto:sparshapoojary60@gmail.com">sparshapoojary60@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+            <i class="fab fa-facebook"></i>
+            <h3>Facebook</h3>
+            <p><a href="https://www.facebook.com/sparsha/" target="_blank">/sparsha</a></p>
+        </div>
+        <div class="contact-card">
+            <i class="fab fa-instagram"></i>
+            <h3>Instagram</h3>
+            <p><a href="https://www.instagram.com/_sparsha_poojary_/" target="_blank">@_sparsha_poojary_</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Heart Stroke Prediction System</p>
+</footer>
+
 </body>
-
 </html>
